@@ -1,0 +1,20 @@
+{% extends 'Madlibs/base.html' %}
+{% block body %}
+    <div>
+        <a href="{% url 'Madlibs:a' id=1 %}" class="nav-item nav-link">Camp</a>
+        <a href="{% url 'Madlibs:b' id=2 %}" class="nav-item nav-link">Love Letter</a>
+        <a href="{% url 'Madlibs:c' id=3 %}" class="nav-item nav-link">Rush</a>
+        <a href="{% url 'Madlibs:d' id=4 %}" class="nav-item nav-link">Sick Note</a>
+        <a href="{% url 'Madlibs:e' id=5 %}" class="nav-item nav-link">Elector</a>
+        <a href="{% url 'Madlibs:f' id=6 %}" class="nav-item nav-link">Holiday</a>
+        <a href="{% url 'Madlibs:g' id=7 %}" class="nav-item nav-link">Memo</a>
+        <a href="{% url 'Madlibs:h' id=8 %}" class="nav-item nav-link">Video Game</a>
+        <a href="{% url 'Madlibs:i' id=9 %}" class="nav-item nav-link">Super Heroes</a>
+        <a href="{% url 'Madlibs:j' id=10 %}" class="nav-item nav-link">Pizza Ad</a>
+        <a href="{% url 'Madlibs:k' id=11 %}" class="nav-item nav-link">Ten Commandments</a>
+        <a href="{% url 'Madlibs:l' id=12 %}" class="nav-item nav-link">Tolkien</a>
+        <a href="{% url 'Madlibs:m' id=13 %}" class="nav-item nav-link">The Mall</a>
+        <a href="{% url 'Madlibs:n' id=14 %}" class="nav-item nav-link">Potter</a>
+        <a href="{% url 'Madlibs:o' id=15 %}" class="nav-item nav-link">Important Thoughts</a>
+    </div>
+{% endblock %}

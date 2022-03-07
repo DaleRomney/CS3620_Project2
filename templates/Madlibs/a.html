@@ -1,0 +1,23 @@
+{% extends 'Madlibs/base.html' %}
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+</head>
+<body>
+    {% block body %}
+        <H5>Dear {{ madlib.relative }},</H5>
+        <p>
+        I am having an amazing time at camp. The counselor is {{ madlib.adjevtive }} and the food is
+        awesome. I met {{ madlib.person }} and we became best friends. Unfortunately, {{ madlib.person }} is
+        injured and I {{ madlib.verb_end_ed }} my {{ madlib.body_part }} so we couldn't go {{ madlib.verb_end_ing }}
+        like everybody else. I need more {{ madlib.noun_plural }} and a {{ madlib.noun }} sharpener, so please
+        {{ madlib.adverb }} {{ madlib.verb }} more when you write back.
+        </p>
+        <p>Your son/daughter</p>
+    {% endblock %}
+</body>
+</html>
