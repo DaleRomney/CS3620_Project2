@@ -9,6 +9,13 @@
 </head>
 <body>
     {% block body %}
+        <p>Dear School Nurse:</p>
+        <p>{{ madlib.silly_word }} {{ madlib.last_name }} will not be attending school today. He/She has come down with
+             a case of {{ madlib.illness }} and has horrible {{ madlib.noun_plural }} and a/an {{ madlib.adjective }}
+             fever. We have made and appointment with the Dr. Whomp, who studied for many years in {{ madlib.place }}
+         and has {{ madlib.number }} degrees in pediatrics. He will send you all the information you need. Thank you!</p>
+        <p>Sincerely</p>
+        <p>Mrs. {{ madlib.last_name }}</p>
 
     {% endblock %}
 </body>

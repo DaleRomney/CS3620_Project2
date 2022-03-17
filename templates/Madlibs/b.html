@@ -9,7 +9,13 @@
 </head>
 <body>
     {% block body %}
-
+        <h5>Dear {{ madlib.person }}</h5>
+        <p>It has come to my {{ madlib.noun }} that you are the {{ madlib.superlative_ending_est }} girl/boy in the
+         world. My {{ madlib.body_part }} starts {{ madlib.verb_end_ing }} every time you speak. I would like to
+         {{ madlib.verb }} if you want to go to the {{ madlib.event }} with me next {{ madlib.day_of_week }}.
+         If you agree, please meet me at the {{ madlib.place }} in {{ madlib.time_span }}. I admire you and
+         everything about you.</p>
+        <h5>Your Admirer</h5>
     {% endblock %}
 </body>
 </html>

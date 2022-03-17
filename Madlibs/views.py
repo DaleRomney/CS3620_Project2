@@ -9,8 +9,8 @@ def index(request):
     return render(request, 'Madlibs/index.html')
 
 
-def madlib_a(request, id):
-    madlib = Madlib.objects.get(id=id)
+def madlib_a(request):
+    madlib = Madlib.objects.get(id=1)
     form = MadlibFormA(request.POST or None, instance=madlib)
 
     if form.is_valid():
@@ -20,8 +20,16 @@ def madlib_a(request, id):
     return render(request, 'Madlibs/madlib-form.html', {'form': form, 'madlib': madlib})
 
 
-def madlib_b(request, id):
-    madlib = Madlib.objects.get(id=id)
+def a(request):
+    madlib = Madlib.objects.get(id=1)
+    context = {
+        'madlib': madlib,
+    }
+    return render(request, 'Madlibs/a.html', context)
+
+
+def madlib_b(request):
+    madlib = Madlib.objects.get(id=2)
     form = MadlibFormB(request.POST or None, instance=madlib)
 
     if form.is_valid():
@@ -31,8 +39,16 @@ def madlib_b(request, id):
     return render(request, 'Madlibs/madlib-form.html', {'form': form, 'madlib': madlib})
 
 
-def madlib_c(request, id):
-    madlib = Madlib.objects.get(id=id)
+def b(request):
+    madlib = Madlib.objects.get(id=2)
+    context = {
+        'madlib': madlib,
+    }
+    return render(request, 'Madlibs/b.html', context)
+
+
+def madlib_c(request):
+    madlib = Madlib.objects.get(id=3)
     form = MadlibFormC(request.POST or None, instance=madlib)
 
     if form.is_valid():
@@ -42,8 +58,16 @@ def madlib_c(request, id):
     return render(request, 'Madlibs/madlib-form.html', {'form': form, 'madlib': madlib})
 
 
-def madlib_d(request, id):
-    madlib = Madlib.objects.get(id=id)
+def c(request):
+    madlib = Madlib.objects.get(id=3)
+    context = {
+        'madlib': madlib,
+    }
+    return render(request, 'Madlibs/c.html', context)
+
+
+def madlib_d(request):
+    madlib = Madlib.objects.get(id=4)
     form = MadlibFormD(request.POST or None, instance=madlib)
 
     if form.is_valid():
@@ -53,8 +77,16 @@ def madlib_d(request, id):
     return render(request, 'Madlibs/madlib-form.html', {'form': form, 'madlib': madlib})
 
 
-def madlib_e(request, id):
-    madlib = Madlib.objects.get(id=id)
+def d(request):
+    madlib = Madlib.objects.get(id=4)
+    context = {
+        'madlib': madlib,
+    }
+    return render(request, 'Madlibs/d.html', context)
+
+
+def madlib_e(request):
+    madlib = Madlib.objects.get(id=5)
     form = MadlibFormE(request.POST or None, instance=madlib)
 
     if form.is_valid():
@@ -64,8 +96,16 @@ def madlib_e(request, id):
     return render(request, 'Madlibs/madlib-form.html', {'form': form, 'madlib': madlib})
 
 
-def madlib_f(request, id):
-    madlib = Madlib.objects.get(id=id)
+def e(request):
+    madlib = Madlib.objects.get(id=5)
+    context = {
+        'madlib': madlib,
+    }
+    return render(request, 'Madlibs/e.html', context)
+
+
+def madlib_f(request):
+    madlib = Madlib.objects.get(id=6)
     form = MadlibFormF(request.POST or None, instance=madlib)
 
     if form.is_valid():
@@ -75,8 +115,16 @@ def madlib_f(request, id):
     return render(request, 'Madlibs/madlib-form.html', {'form': form, 'madlib': madlib})
 
 
-def madlib_g(request, id):
-    madlib = Madlib.objects.get(id=id)
+def f(request):
+    madlib = Madlib.objects.get(id=6)
+    context = {
+        'madlib': madlib,
+    }
+    return render(request, 'Madlibs/f.html', context)
+
+
+def madlib_g(request):
+    madlib = Madlib.objects.get(id=7)
     form = MadlibFormG(request.POST or None, instance=madlib)
 
     if form.is_valid():
@@ -86,8 +134,17 @@ def madlib_g(request, id):
     return render(request, 'Madlibs/madlib-form.html', {'form': form, 'madlib': madlib})
 
 
-def madlib_h(request, id):
-    madlib = Madlib.objects.get(id=id)
+
+def g(request):
+    madlib = Madlib.objects.get(id=7)
+    context = {
+        'madlib': madlib,
+    }
+    return render(request, 'Madlibs/g.html', context)
+
+
+def madlib_h(request):
+    madlib = Madlib.objects.get(id=8)
     form = MadlibFormH(request.POST or None, instance=madlib)
 
     if form.is_valid():
@@ -97,8 +154,16 @@ def madlib_h(request, id):
     return render(request, 'Madlibs/madlib-form.html', {'form': form, 'madlib': madlib})
 
 
-def madlib_i(request, id):
-    madlib = Madlib.objects.get(id=id)
+def h(request):
+    madlib = Madlib.objects.get(id=8)
+    context = {
+        'madlib': madlib,
+    }
+    return render(request, 'Madlibs/h.html', context)
+
+
+def madlib_i(request):
+    madlib = Madlib.objects.get(id=9)
     form = MadlibFormI(request.POST or None, instance=madlib)
 
     if form.is_valid():
@@ -108,8 +173,16 @@ def madlib_i(request, id):
     return render(request, 'Madlibs/madlib-form.html', {'form': form, 'madlib': madlib})
 
 
-def madlib_j(request, id):
-    madlib = Madlib.objects.get(id=id)
+def i(request):
+    madlib = Madlib.objects.get(id=9)
+    context = {
+        'madlib': madlib,
+    }
+    return render(request, 'Madlibs/i.html', context)
+
+
+def madlib_j(request):
+    madlib = Madlib.objects.get(id=10)
     form = MadlibFormJ(request.POST or None, instance=madlib)
 
     if form.is_valid():
@@ -119,8 +192,16 @@ def madlib_j(request, id):
     return render(request, 'Madlibs/madlib-form.html', {'form': form, 'madlib': madlib})
 
 
-def madlib_k(request, id):
-    madlib = Madlib.objects.get(id=id)
+def j(request):
+    madlib = Madlib.objects.get(id=10)
+    context = {
+        'madlib': madlib,
+    }
+    return render(request, 'Madlibs/j.html', context)
+
+
+def madlib_k(request):
+    madlib = Madlib.objects.get(id=11)
     form = MadlibFormK(request.POST or None, instance=madlib)
 
     if form.is_valid():
@@ -130,8 +211,16 @@ def madlib_k(request, id):
     return render(request, 'Madlibs/madlib-form.html', {'form': form, 'madlib': madlib})
 
 
-def madlib_l(request, id):
-    madlib = Madlib.objects.get(id=id)
+def k(request):
+    madlib = Madlib.objects.get(id=11)
+    context = {
+        'madlib': madlib,
+    }
+    return render(request, 'Madlibs/k.html', context)
+
+
+def madlib_l(request):
+    madlib = Madlib.objects.get(id=12)
     form = MadlibFormL(request.POST or None, instance=madlib)
 
     if form.is_valid():
@@ -141,8 +230,16 @@ def madlib_l(request, id):
     return render(request, 'Madlibs/madlib-form.html', {'form': form, 'madlib': madlib})
 
 
-def madlib_m(request, id):
-    madlib = Madlib.objects.get(id=id)
+def l(request):
+    madlib = Madlib.objects.get(id=12)
+    context = {
+        'madlib': madlib,
+    }
+    return render(request, 'Madlibs/l.html', context)
+
+
+def madlib_m(request):
+    madlib = Madlib.objects.get(id=13)
     form = MadlibFormM(request.POST or None, instance=madlib)
 
     if form.is_valid():
@@ -152,8 +249,16 @@ def madlib_m(request, id):
     return render(request, 'Madlibs/madlib-form.html', {'form': form, 'madlib': madlib})
 
 
-def madlib_n(request, id):
-    madlib = Madlib.objects.get(id=id)
+def m(request):
+    madlib = Madlib.objects.get(id=13)
+    context = {
+        'madlib': madlib,
+    }
+    return render(request, 'Madlibs/m.html', context)
+
+
+def madlib_n(request):
+    madlib = Madlib.objects.get(id=14)
     form = MadlibFormN(request.POST or None, instance=madlib)
 
     if form.is_valid():
@@ -163,8 +268,16 @@ def madlib_n(request, id):
     return render(request, 'Madlibs/madlib-form.html', {'form': form, 'madlib': madlib})
 
 
-def madlib_o(request, id):
-    madlib = Madlib.objects.get(id=id)
+def n(request):
+    madlib = Madlib.objects.get(id=14)
+    context = {
+        'madlib': madlib,
+    }
+    return render(request, 'Madlibs/n.html', context)
+
+
+def madlib_o(request):
+    madlib = Madlib.objects.get(id=15)
     form = MadlibFormO(request.POST or None, instance=madlib)
 
     if form.is_valid():
@@ -172,6 +285,15 @@ def madlib_o(request, id):
         return redirect('Madlibs:o')
 
     return render(request, 'Madlibs/madlib-form.html', {'form': form, 'madlib': madlib})
+
+
+def o(request):
+    madlib = Madlib.objects.get(id=15)
+    context = {
+        'madlib': madlib,
+    }
+    return render(request, 'Madlibs/o.html', context)
+
 
 def madlib(request):
     return render(request, 'Madlibs/madlibs.html')

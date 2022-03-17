@@ -69,28 +69,32 @@ class MadlibFormJ(forms.ModelForm):
 class MadlibFormK(forms.ModelForm):
     class Meta:
         model = Madlib
-        fields = ['verb', 'noun', 'adjective', 'government_position', 'holiday', 'occupation', 'crime']
+        fields = ['verb', 'noun', 'adjective', 'government_position', 'holiday', 'occupation', 'crime', 'verb_end_ed',
+                  'verb_end_s', 'silly_word', 'noun_end_ers', 'noun_plural']
 
 
 class MadlibFormL(forms.ModelForm):
     class Meta:
         model = Madlib
-        fields = ['fruit', 'noun_plural', 'noun', 'silly_word']
+        fields = ['fruit', 'noun_plural', 'noun', 'silly_word', 'noun_end_ers', 'animal_plural', 'crime', ]
 
 
 class MadlibFormM(forms.ModelForm):
     class Meta:
         model = Madlib
-        fields = ['number', 'adjective', 'person', 'animal_plural', 'noun_plural', 'verb_end_ing', 'noun', 'location']
+        fields = ['number', 'adjective', 'person', 'girl_name', 'animal_plural', 'noun_plural', 'verb_end_ing', 'noun',
+                  'location', 'fruit', 'crime', 'animal', 'illness', 'kitchen_appliance', 'food_plural']
 
 
 class MadlibFormN(forms.ModelForm):
     class Meta:
         model = Madlib
-        fields = ['boy_name', 'noun', 'occupation', 'measurement', 'adjective', 'game', 'noun_plural', 'verb_end_ing']
+        fields = ['boy_name', 'noun', 'occupation', 'measurement', 'adjective', 'game', 'noun_plural', 'verb_end_ing',
+                  'noun_end_ers', 'silly_word', 'kitchen_appliance', ]
 
 
 class MadlibFormO(forms.ModelForm):
     class Meta:
         model = Madlib
-        fields = ['verb', 'adverb', 'adjective', 'noun_plural', 'verb_end_ing', 'noun', 'weapon_plural']
+        fields = ['verb', 'adverb', 'adjective', 'noun_plural', 'verb_end_ing', 'noun', 'weapon_plural', 'silly_word',
+                  'verb_end_s', 'occupation']
